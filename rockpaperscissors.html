@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script src="index2.js" defer></script>
+        <link href="index.css" rel="stylesheet">
+        <link rel="preload" href="font/Mario-Kart-DS.woff2" as="font" type="font/woff2" crossorigin>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                SKEANS
+            </div>
+            <div class="github">
+                <a href="https://github.com/skeanster"><img src="pictures/GitHub-Mark.png" id="github"></a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="titleContainer">
+                <div class="title">
+                    SAVE THE MUSHROOM KINGDOM
+                </div>
+                <div class="titleMobile">
+                    SAVE THE MUSHROOM KINGDOM
+                </div>
+                <div class="subtitle">
+                    defeat bowser 5 times
+                </div>
+            </div>
+
+            <div class="scoreLabels">
+                <div class="you">
+                    you
+                </div>
+                <div class="bowser">
+                    bowser
+                </div>
+            </div>
+
+            <div class="scores">
+                <div class="playerScore" id="playerScore">0</div>
+                <div class="computerScore" id="computerScore">0</div>
+            </div>
+
+            <form class="select" id="select">
+                <button type="button" class="button" id="btnRock" onclick="playRound(0,); over()"><img id="handRock" src="pictures/paper.jpg"></button>
+                <button type="button" class="button" id="btnPaper" onclick="playRound(1,); over()"><img id="handRock" src="pictures/rock.jpg"></button>
+                <button type="button" class="button" id="btnScissors" onclick="playRound(2,); over()"><img id="handRock" src="pictures/scissors.jpg"></button>
+            </form>
+            <div class="youWin hide" id="marioHide"><img id="mario" src="pictures/mario.gif"></div>
+            <div class="youLose hide" id="bowserHide"><img id="bowser" src="pictures/bowser.gif"></div>
+
+            <form class ="restart hide" id="reload" action="rockpaperscissors.html">
+                <button class="reload" type="submit">Play Again</button>
+            </form>
+        </div>
+    </body>
+</html>
