@@ -69,10 +69,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
     padding-left:10px;
     padding-right:10px;
     padding-top: 10px;
+    padding-bottom: 10px;
     color: black;
 }
 
@@ -101,6 +101,12 @@ body {
     gap: 10px;
 }
 
+.message {
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 .you {
     width: 105px;
     display: flex;
@@ -124,6 +130,19 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     width: 75%
+}
+
+.selectTwo {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(67, 176, 71);
+    padding: 50px 10px;
+    border-radius: 15px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%
 }
 
 .scores {
@@ -153,6 +172,15 @@ body {
     
 }
 
+.buttonTwo {
+    width: 90px;
+    height: 135px;
+    padding: 0;
+    border: none;
+    
+}
+
+
 .hide {
     display: none;
 }
@@ -163,7 +191,17 @@ body {
     border: 2px solid black;
 }
 
+#handRockTwo {
+    width: 90px;
+    height: 135px;
+    border: 2px solid black;
+}
+
 .button:hover {
+    transform: scale(1.05)
+}
+
+.buttonTwo:hover {
     transform: scale(1.05)
 }
 
@@ -175,6 +213,18 @@ body {
 
 @media only screen and (min-width: 526px) {
     .titleMobile {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .select {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 525px) {
+    .selectTwo {
         display:none;
     }
 }
