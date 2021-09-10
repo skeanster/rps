@@ -12,6 +12,7 @@ a {
     color: white
 }
 
+
 body {
     font-family: 'Mario Kart DS';
     font-weight: normal;
@@ -193,3 +194,9 @@ body {
 .hide {
     display: none;
 }
+
+.reload {
+    background-color: black;
+
+}
+
